@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*form is parent for flex*/
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+fieldset {
+    background-color: #F5F5F5;
+    border-radius: 3px;
+}
+
+legend {
+    background-color: #fefefe;
+    border: solid;
+    border-color: #474747;
+    border-width: 0.5px;
+    padding: 1rem 0.75rem;
+    border-radius: 3px;
+}
+
+.box {
+    margin: 0.5rem 0 1rem 0;
+}
+
+label {
+    display: block;
+}
+
+.button {
+    margin: 0.25rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #6495ED;
+    border-radius: 3px;
+    color: #f5f5f5;
+}
+
+/*uinput is user input and controls text boxes and ares inside the form*/
+.uinput {
+    min-width: 15rem;
+    height: auto;
+    border: solid;
+    border-color: #474747;
+    border-width: 0.5px;
+    border-radius: 3px;
+}
+
+/*tablet mode*/
+@media (min-width: 25rem){
+    body{
+        background-color: pink;
+    }
+
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    
+    .uinput {
+        min-width: 20rem;
+    }
+}
+
+/*desktop mode*/
+
+@media (min-width: 40rem) {
+    body {
+        background-color: green;
+    }
+    .uinput {
+        min-width: 35rem;
+    }
+}
